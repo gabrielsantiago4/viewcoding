@@ -1,6 +1,12 @@
-public struct viewcoding_package {
-    public private(set) var text = "Hello, World!"
-
-    public init() {
+public protocol viewcoding {
+    func setupHierarchy()
+    func configureConstraints()
+    func addConfigurations()
+}
+extension viewcoding {
+    func buildView() {
+        setupHierarchy()
+        configureConstraints()
+        addConfigurations()
     }
 }
