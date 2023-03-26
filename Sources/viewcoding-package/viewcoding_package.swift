@@ -3,7 +3,7 @@ public protocol ViewCoding {
     func configureConstraints()
     func addConfigurations()
 }
-extension ViewCoding {
+public extension ViewCoding {
     func buildView() {
         setupHierarchy()
         configureConstraints()
