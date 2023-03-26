@@ -1,9 +1,9 @@
-public protocol viewcoding {
+public protocol Viewcoding {
     func setupHierarchy()
     func configureConstraints()
     func addConfigurations()
 }
-extension viewcoding {
+extension Viewcoding {
     func buildView() {
         setupHierarchy()
         configureConstraints()
